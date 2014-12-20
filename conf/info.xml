@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">아약스보드</title>
+	<description xml:lang="ko">회원이 아약스보드를 통해 알림을 받을 수 있는 모듈을 선택할 수 있도록 하려면 이 애드온을 활성화시켜주세요.</description>
+	<version>2.0.1</version>
+	<date>2014-12-20</date>
+	<author email_address="contact@ajaxboard.co.kr" link="http://www.ajaxboard.co.kr/">
+		<name xml:lang="ko">아약스보드</name>
+	</author>
+	<extra_vars>
+		<var name="menu_name" type="text">
+			<title xml:lang="ko">메뉴 이름</title>
+			<description xml:lang="ko">회원정보 보기에서 보여질 메뉴 이름을 입력합니다.</description>
+		</var>
+		<var name="selected" type="select">
+			<title xml:lang="ko">허용 대상 기본 설정</title>
+			<description xml:lang="ko">알림을 허용할 모듈에 대한 기본 선택값을 결정합니다.</description>
+			<options value="SELECTED">
+				<title xml:lang="ko">선택됨</title>
+			</options>
+			<options value="DEFAULT">
+				<title xml:lang="ko">선택 안 함</title>
+			</options>
+		</var>
+		<var name="target" type="textarea">
+			<title xml:lang="ko">알림을 허용할 모듈</title>
+			<description xml:lang="ko">회원이 게시글 또는 댓글이 등록될 때 알림을 받을 수 있도록 할 모듈의 시리얼 번호(module_srl) 또는 아이디(mid)를 입력해주세요. 줄바꿈으로 구분합니다.</description>
+		</var>
+	</extra_vars>
+</addon>
