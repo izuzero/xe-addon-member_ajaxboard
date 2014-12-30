@@ -26,7 +26,7 @@ if ($called_position == 'before_module_init')
 	$selected = $addon_info->selected != 'DEFAULT';
 	$GLOBALS['__ajaxboard__']['addon']['selected'] = $selected;
 
-	$target = explode(PHP_EOL, $addon_info->target);
+	$target = explode("\n", $addon_info->target);
 	$oAjaxboardController = getController('ajaxboard');
 	$oAjaxboardController->insertAddonUserInfo($target);
 
