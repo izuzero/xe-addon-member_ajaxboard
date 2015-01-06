@@ -11,12 +11,6 @@ if (!defined('__XE__'))
 	exit();
 }
 
-$logged_info = Context::get('logged_info');
-if (!$logged_info || isCrawler())
-{
-	return;
-}
-
 if ($called_position == 'before_module_init')
 {
 	Context::loadLang(_XE_PATH_ . 'addons/member_ajaxboard/lang');
